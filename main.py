@@ -2,13 +2,12 @@ from parser import parser
 from model import Outlet
 from db_config import create_table,insert_into_db
 from lxml import html
+import time
+from utils import load
+
 
 file=r"C:\Users\beerva.joshi\Downloads\Burger King Locator _ Ahmedabad _ Fast Food Restaurant.html"
 table_name="Outlets"
-def load(file):
-    with open(file, "r", encoding="utf-8") as f:
-        content = f.read()
-        return content
 
 def main():
     create_table(table_name)
@@ -24,4 +23,7 @@ def main():
         insert_into_db(table_name,validated)
 
 if __name__=="__main__":
+    st=time.time()
     main()
+    et=time.time()
+    print(et-st)
