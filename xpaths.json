@@ -1,0 +1,13 @@
+{
+    "store_box":     "//div[@class='store-info-box']",
+    "store_id":      ".//a[contains(@class,'website')]/@href",
+    "Outletname":    ".//li[contains(@class,'outlet-name')]",
+    "OutletAddress": ".//li[contains(@class,'outlet-address')]",
+    "landmark":      ".//li[not(@class)]/div[contains(@class,'info-text')]",
+    "OutletCity":    "//*[@id='OutletCity']/option[@selected]",
+    "OutletState":   "//*[@id='OutletState']/option[@selected]",
+    "Phone":         ".//li[contains(@class,'outlet-phone')]",
+    "timings":       ".//li[contains(@class,'outlet-timings')]",
+    "MapUrl":        ".//a[contains(@class,'map')]/@href",
+    "OutletUrl":     ".//a[contains(@class,'website')]/@href"
+}
